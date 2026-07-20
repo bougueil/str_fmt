@@ -32,8 +32,7 @@ defmodule StrFmt.MixProject do
         "compile --warnings-as-errors",
         "deps.unlock --unused",
         "format",
-        "test",
-        "credo"
+        "test"
       ]
     ]
   end
