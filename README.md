@@ -1,5 +1,3 @@
-
-```markdown
 # StrFmt
 
 A lightweight Elixir library for formatting strings with ANSI colors, padding, truncation, size conversion, and terminal-width awareness. It provides macros to build formatted output structures that are rendered into final strings only when needed, allowing for dynamic width calculations.
@@ -104,4 +102,3 @@ Units marked with `:scr` will be truncated if they exceed the remaining width of
 ## License
 
 MIT License
-```
