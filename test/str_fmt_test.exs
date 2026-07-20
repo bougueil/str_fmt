@@ -165,7 +165,8 @@ defmodule StrFmtTest do
 
       result = [strf(prefix), link, strf(suffix)] |> StrFmt.to_string() |> strip_ansi()
 
-      assert result == "Start:\e]8;;http://very-long-uri-that-should-not-affect-width.com\e\\Link\e]8;;\e\\End"
+      assert result ==
+               "Start:\e]8;;http://very-long-uri-that-should-not-affect-width.com\e\\Link\e]8;;\e\\End"
     end
   end
 
