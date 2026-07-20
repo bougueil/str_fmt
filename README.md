@@ -32,7 +32,7 @@ iex> strf_sizeb(12000, [:bright]) |> StrFmt.to_string()
 
 # Screen-aware truncation
 # This will truncate the message to fit the remaining terminal width
-iex> strf("This is a very long message that might wrap", [:dim]) 
+iex> strf("This is a very long message that might wrap", [:faint]) 
      |> strf_scr() 
      |> StrFmt.to_string()
 "\e[2mThis is a ver...\e[0m"
