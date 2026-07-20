@@ -39,7 +39,7 @@ iex> strf("This is a very long message that might wrap", [:dim])
 
 # Combining multiple units
 iex> [
-...>   strf_date(1672531200, [:bold]),
+...>   strf_date(1672531200, [:bright]),
 ...>   " - ",
 ...>   strf("Status: OK", [:green])
 ...> ] |> StrFmt.to_string()
@@ -52,7 +52,7 @@ iex> [
 All macros accept an optional list of ANSI styles as the second argument. These are passed to `IO.ANSI.format/1`.
 
 ```elixir
-strf("Error", [:red, :bold])
+strf("Error", [:red, :bright])
 strf_sizeb(5000, [:cyan])
 ```
 
