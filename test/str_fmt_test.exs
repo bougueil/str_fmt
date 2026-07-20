@@ -20,8 +20,8 @@ defmodule StrFmtTest do
     end
 
     test "applies ANSI styles" do
-      result = strf("Error", [:red, :bold]) |> StrFmt.to_string()
-      # bold
+      result = strf("Error", [:red, :bright]) |> StrFmt.to_string()
+      # bright (bold)
       assert String.contains?(result, "\e[1m")
       # red
       assert String.contains?(result, "\e[31m")
