@@ -10,7 +10,7 @@ Add `str_fmt` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:str_fmt, "~> 0.1.0"}
+    {:str_fmt, git: "https://github.com/bougueil/str_fmt"}
   ]
 end
 ```
